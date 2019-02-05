@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(320px, auto) 1fr;
+}
+
+#navbar {
+    position: fixed;
+    margin-left: 25px;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none; 
+      
+}
+
+#navbar a:hover {
+    transform: scale(1.1);
+}
+
+#main-doc {
+    grid-column: 2/3;
+    margin-top: 30px;
+}
+
+.main-section {
+    padding-bottom: 10px;
+}
+
+.main-section ul li {
+    padding: 5px;
+}
+
+header {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+code {
+    background: #eaeaea;
+    padding: 10px;
+    display: block;
+    margin-left: 20px;
+}
