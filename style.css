@@ -6,7 +6,6 @@ body {
 
 .container {
     width: 90%;
-    height: auto;
 }
 
 .grid {
@@ -17,13 +16,17 @@ body {
 #navbar {
     position: fixed;
     margin-left: 25px;
+    padding-top: 30px;
 }
 
 #navbar a {
     display: block;
     padding: 10px 0;
-    text-decoration: none; 
-      
+    text-decoration: none;      
+}
+
+#navbar a, #navbar a:visited {
+    color: #677BC4;
 }
 
 #navbar a:hover {
@@ -53,4 +56,58 @@ code {
     padding: 10px;
     display: block;
     margin-left: 20px;
+}
+
+span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #navbar {
+        /* background: #677BC4; */
+        position: absolute;
+        padding: 0;
+        width: 100%;
+        top: 0;
+        margin-left:5px;
+        text-align: center;
+    }
+
+    #navbar a {
+        padding: 5px;
+    }
+
+    #navbar a, #navbar a:visited {
+        color: #677BC4;
+    }
+
+    /* #navbar a:hover {
+        transform: none;
+    } */
+
+    #main-doc {
+        position: relative;
+        top: 350px;
+    }
+
+    code {
+        padding: 10px;
+        display: inline-block;
+        margin-left: 1px;
+    }
+    
 }
